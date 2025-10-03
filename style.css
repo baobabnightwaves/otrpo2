@@ -54,7 +54,7 @@ header .left {
 }
 header .left h1 {
   margin-left: 20px;
-  color: white;
+  color: #ffffff;
 }
 header .left img {
   height: 80%;
@@ -124,6 +124,4 @@ footer h4 {
 .head1 {
   width: 1000px;
   margin: auto;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
