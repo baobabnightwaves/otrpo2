@@ -1,7 +1,6 @@
 @use "sass:color";
 @use "sass:math";
 $left-color: #f5e5b8;
-$right-color: #e9d08d;
 $body-color: #f0efe0;
 $header-color: #283618;
 $border-color: rgb(200, 200, 200);
@@ -10,25 +9,25 @@ $footer-color: #dbdac4;
 $button-color: #ffffff;
 $steps: 5;
 
-@mixin card-colors($start-color, $end-color, $steps) {
-  @for $i from 1 through $steps {
-    .card:nth-child(#{$i}) {
-      $percentage: math.div($i - 1, $steps - 1) * 100%;
-      background: color.mix($end-color, $start-color, $percentage);
-    }
-  }
-
-  .card:nth-child(n + #{$steps + 1}) {
+@mixin card-colors($start-color, $steps) {
     @for $i from 1 through $steps {
-      &:nth-child(#{$steps}n + #{$i}) {
-        $percentage: math.div($i - 1, $steps - 1) * 100%;
-        background-color: color.mix($end-color, $start-color, $percentage);
-      }
+        .card:nth-child(#{$i}) {
+            $percentage: math.div($i - 1, $steps - 1) * 15%;
+            background-color: color.scale($start-color, $lightness: -$percentage);
+        }
     }
-  }
+
+    .card:nth-child(n + #{$steps + 1}) {
+        @for $i from 1 through $steps {
+            &:nth-child(#{$steps}n + #{$i}) {
+                $percentage: math.div($i - 1, $steps - 1) * 15%;
+                background-color: color.scale($start-color, $lightness: -$percentage);
+            }
+        }
+    }
 }
 
-@include card-colors($left-color, $right-color, $steps);
+@include card-colors($left-color, $steps);
 
 body {
     background: $body-color;
@@ -55,7 +54,7 @@ header {
 
         img {
             height: 80%;
-            margin-left: 10px;
+            margin-left: 150px;
         }
     }
 
@@ -67,6 +66,7 @@ header {
         cursor: pointer;
         font-size: 18px;
         border: 1px solid $border-color;
+        margin-right: 150px;
 
         &:hover {
             background: color.scale($button-color, $lightness: -10%);
@@ -125,7 +125,8 @@ footer {
     align-items: center;
     
     h4 {
-        margin-left: 25px;
+        width: 1000px;
+        margin: auto;
     }
 }
 
