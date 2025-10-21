@@ -50,12 +50,12 @@ header {
 
         h1 {
             margin-left: 20px;
-            color: white;
+            color: $button-color;
         }
 
         img {
             height: 80%;
-            margin-left: 10px;
+            margin-left: 150px;
         }
     }
 
@@ -67,6 +67,7 @@ header {
         cursor: pointer;
         font-size: 18px;
         border: 1px solid $border-color;
+        margin-right: 150px;
 
         &:hover {
             background: color.scale($button-color, $lightness: -7%);
@@ -77,8 +78,17 @@ header {
 .container {
     max-width: 1000px;
 
+<<<<<<< HEAD
     .row {
         margin-bottom: 30px;
+=======
+    .card {
+        width: 300px;
+        height: 655px;
+        border: 1px solid $border-color;
+        display: flex;
+        flex-direction: column;
+>>>>>>> af8fcde29e4deafa2daf620b518e2176cd353c22
 
         .col-lg-4, .col-md-6, .col-sm-12 {
             .custom-card {
@@ -95,6 +105,7 @@ header {
                     justify-content: center;
                     margin-top: 15px;
 
+<<<<<<< HEAD
                     img {
                         height: 100%;
                         max-width: 100%;
@@ -127,6 +138,16 @@ header {
                     }
                 }
             }
+=======
+        h3, .text, .hyper {
+            margin-left: 15px;
+            margin-right: 15px;
+>>>>>>> af8fcde29e4deafa2daf620b518e2176cd353c22
+        }
+
+        .hyper {
+            margin-top: auto;
+            margin-bottom: 15px;
         }
     }
 }
@@ -140,7 +161,8 @@ footer {
     align-items: center;
     
     h4 {
-        margin-left: 25px;
+        width: 1000px;
+        margin: auto;
     }
 }
 
