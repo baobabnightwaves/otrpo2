@@ -7,18 +7,15 @@ $border-color: #c8c8c8;
 $label-color: #ebe8e8;
 $footer-color: #dbdac4;
 $button-color: #ffffff;
-$card-hover-shadow: rgba(0, 0, 0, 0.15);
-$footer-bg: #e9e7da;
-$nav-bg: #283618;
 
 $steps: 5;
 
 @mixin card-colors($start-color, $steps) {
     @for $i from 1 through $steps {
-        $percentage: math.div($i - 1, $steps - 1) * 10%;
+        $percentage: math.div($i - 1, $steps - 1) * 15%;
         .row > div:nth-child(#{$i}) .custom-card,
         .row > div:nth-child(#{$steps}n + #{$i}) .custom-card {
-        background-color: color.scale($start-color, $lightness: -$percentage);
+            background-color: color.scale($start-color, $lightness: -$percentage);
         }
     }
 }
@@ -31,30 +28,51 @@ body {
     font-family: "B612", sans-serif;
 }
 
-.navbar {
-    background-color: $nav-bg !important;
+.navbar .btn {
+    border-radius: 0 !important;
 }
 
-.custom-card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 1px solid #ccc;
+.navbar {
+    background: $header-color !important;
+}
 
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 20px $card-hover-shadow;
-    }
+.container {
+    max-width: 1000px;
 
-    img {
-        object-fit: contain;
-    }
+    .custom-card {
+        border-radius: 0 !important;
+        border: 1px solid #ccc;
 
-    span {
-        font-weight: 600;
-        font-size: 0.85rem;
+        .btn {
+            border-radius: 0 !important;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        img {
+            object-fit: contain;
+        }
+
+        span {
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
     }
 }
 
 footer {
-    background-color: $footer-bg;
+    background: $footer-color !important;
     border-top: 1px solid #ccc;
+}
+
+.modal-dialog {
+    border-radius: 0 !important;
+
+    .modal-content {
+        border-radius: 0 !important;
+    }
 }

@@ -5,22 +5,22 @@
 
 .row > div:nth-child(2) .custom-card,
 .row > div:nth-child(5n+2) .custom-card {
-  background-color: rgb(243.6759259259, 225.5574074074, 174.5990740741);
+  background-color: rgb(243.0138888889, 223.8361111111, 169.8986111111);
 }
 
 .row > div:nth-child(3) .custom-card,
 .row > div:nth-child(5n+3) .custom-card {
-  background-color: rgb(242.3518518519, 222.1148148148, 165.1981481481);
+  background-color: rgb(241.0277777778, 218.6722222222, 155.7972222222);
 }
 
 .row > div:nth-child(4) .custom-card,
 .row > div:nth-child(5n+4) .custom-card {
-  background-color: rgb(241.0277777778, 218.6722222222, 155.7972222222);
+  background-color: rgb(239.0416666667, 213.5083333333, 141.6958333333);
 }
 
 .row > div:nth-child(5) .custom-card,
 .row > div:nth-child(5n+5) .custom-card {
-  background-color: rgb(239.7037037037, 215.2296296296, 146.3962962963);
+  background-color: rgb(237.0555555556, 208.3444444444, 127.5944444444);
 }
 
 body {
@@ -28,28 +28,46 @@ body {
   font-family: "B612", sans-serif;
 }
 
-.navbar {
-  background-color: #283618 !important;
+.navbar .btn {
+  border-radius: 0 !important;
 }
 
-.custom-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.navbar {
+  background: #283618 !important;
+}
+
+.container {
+  max-width: 1000px;
+}
+.container .custom-card {
+  border-radius: 0 !important;
   border: 1px solid #ccc;
 }
-.custom-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+.container .custom-card .btn {
+  border-radius: 0 !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.custom-card img {
+.container .custom-card .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.container .custom-card img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.custom-card span {
+.container .custom-card span {
   font-weight: 600;
   font-size: 0.85rem;
 }
 
 footer {
-  background-color: #e9e7da;
+  background: #dbdac4 !important;
   border-top: 1px solid #ccc;
+}
+
+.modal-dialog {
+  border-radius: 0 !important;
+}
+.modal-dialog .modal-content {
+  border-radius: 0 !important;
 }/*# sourceMappingURL=style.css.map */
