@@ -55,19 +55,24 @@ body {
   }
 }
 
-footer {
-  background: $footer-color !important;
-  border-top: 1px solid $border-color;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 40px;
-
-  h6 {
-    color: $font-color;
-    margin: 0;
-  }
+footer { 
+  height: 200px; 
+  background: $footer-color !important; 
+  border: 2px solid $border-color; 
+  display: flex; 
+  align-items: center; 
+  
+  .container {
+    margin: 0 auto;
+    
+    h4 { 
+      color: $font-color;
+    } 
+    
+    img { 
+      height: 50px; 
+    } 
+  } 
 }
 
 .modal-dialog, .modal-content, .btn {

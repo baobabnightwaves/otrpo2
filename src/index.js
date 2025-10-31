@@ -3,14 +3,6 @@ import * as bootstrap from 'bootstrap';
 import './scss/styles.scss';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function component() {
-    const element = document.createElement('div');
-    element.innerHTML = "Hello Webpack!!";
-    return element;
-}
-
-document.body.appendChild(component());
-
 document.addEventListener('DOMContentLoaded', function() {
     const modals = Array.from(document.querySelectorAll('.modal'));
     const modalByIndex = {};
