@@ -1,0 +1,79 @@
+@use "sass:math";
+@use "sass:color";
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+@mixin card-colors($start-color, $steps) {
+  @for $i from 1 through $steps {
+    $percentage: math.div($i - 1, $steps - 1) * 15%;
+    .row > div:nth-child(#{$i}) .custom-card,
+    .row > div:nth-child(#{$steps}n + #{$i}) .custom-card {
+      background-color: color.scale($start-color, $lightness: -$percentage);
+    }
+  }
+}
+
+@include card-colors($left-color, $steps);
+
+body {
+  background-color: $body-color;
+  font-family: "B612", sans-serif;
+}
+
+.navbar {
+  background: $header-color !important;
+
+  .btn {
+    border-radius: 0 !important;
+  }
+}
+
+.container {
+  .custom-card {
+    border-radius: 0 !important;
+    border: 1px solid $border-color;
+
+    .btn {
+      border-radius: 0 !important;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    img {
+      object-fit: contain;
+      max-height: 425px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+  }
+}
+
+footer {
+  background: $footer-color !important;
+  border-top: 1px solid $border-color;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
+
+  h6 {
+    color: $font-color;
+    margin: 0;
+  }
+}
+
+.modal-dialog, .modal-content, .btn {
+  border-radius: 0 !important;
+}
+
+.custom-card, .modal-content {
+    color: $font-color;
+}
