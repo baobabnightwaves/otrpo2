@@ -15,6 +15,13 @@
 
 @include card-colors($left-color, $steps);
 
+@media (min-width: 2000px) {
+  .custom-grid .custom-col {
+    flex: 0 0 auto;
+    width: 14.2857%;
+  }
+}
+
 body {
   background-color: $body-color;
   font-family: "B612", sans-serif;
@@ -79,6 +86,24 @@ footer {
   border-radius: 0 !important;
 }
 
+.modal-body {
+  img {
+    height: 300px;
+  }
+}
+
 .custom-card, .modal-content {
     color: $font-color;
+}
+
+.popover {
+  --bs-popover-bg: #ffffff !important;
+  --bs-popover-color: #000000 !important;
+  --bs-popover-header-bg: #ffffff !important;
+  --bs-popover-header-color: #000000 !important;
+  border: 1px solid #ccc;
+}
+
+.popover-body {
+  color: #000000 !important;
 }

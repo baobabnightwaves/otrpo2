@@ -26,7 +26,7 @@
     <div class="container mb-5">
         <div class="row g-4">
             <!-- Лиссабон -->
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="col-12 col-md-6 col-lg-4 custom-col">
                 <div class="card h-100 shadow-sm custom-card">
                     <div class="position-relative">
                         <img src="img/Coat_of_Arms_of_Lisbon.png" class="card-img-top p-4">
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <!-- Порту -->
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="col-12 col-md-6 col-lg-4 custom-col">
                 <div class="card h-100 shadow-sm custom-card">
                     <div class="position-relative">
                         <img src="img/Porto_COA.svg.png" class="card-img-top p-4">
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <!-- Коимбра -->
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="col-12 col-md-6 col-lg-4 custom-col">
                 <div class="card h-100 shadow-sm custom-card">
                     <div class="position-relative">
                         <img src="img/250px-CBR.png" class="card-img-top p-4">
@@ -83,7 +83,7 @@
                 </div>
             </div>
             <!-- Фару -->
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="col-12 col-md-6 col-lg-4 custom-col">
                 <div class="card h-100 shadow-sm custom-card">
                     <div class="position-relative">
                         <img src="img/Faroarms.svg.png" class="card-img-top p-4">
@@ -102,7 +102,7 @@
                 </div>
             </div>
             <!-- Эвора -->
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="col-12 col-md-6 col-lg-4 custom-col">
                 <div class="card h-100 shadow-sm custom-card">
                     <div class="position-relative">
                         <img src="img/COA_of_Évora_municipality_(Portugal).png" class="card-img-top p-4" alt="Герб Эворы">
@@ -136,15 +136,34 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="img/Coat_of_Arms_of_Lisbon.png" class="img-fluid mb-3" style="max-height:150px;">
-                    <img src="img/Lisbon_Montage_2020.jpg" class="img-fluid mb-3" style="max-height:150px;">
+                    <div class="row mb-3">
+                        <div class="col-md-6 text-center">
+                            <img src="img/Coat_of_Arms_of_Lisbon.png" class="img-fluid">
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="img/images.jpeg" class="img-fluid">
+                        </div>
+                    </div>
                     <p>
-                        Лиссабон — столица Португалии с населением около 505 000 человек. 
-                        Основан в 1256 году, мэр — Карлос Мойедаш. 
-                        Город впечатляет своей архитектурой, живописными видами на реку Тежу и богатой историей. 
-                        Соседи: на север — Лореш, на запад — Ош-Креш, на восток — Вила-Франка-де-Шира.
+                        Лиссабон — столица и крупнейший город Португалии, расположенный на берегах реки Тежу.
+                        Население — около 505 000 человек, а с пригородами — более 2,8 миллиона.
+                        Город основан в 1256 году и является старейшей столицей Западной Европы после Афин.
+                    </p>
+                    <p>
+                        Лиссабон славится своими крутыми улочками, трамваями №28, мостом имени 25 апреля и башней Белен.
+                        Здесь находится Монастырь Жеронимуш — шедевр мануэлино, а также Лиссабонский океанариум — один из крупнейших в Европе.
+                    </p>
+                    <p>
+                        Экономика города базируется на туризме, финансовом секторе и технологиях — Лиссабон считается «португальской Силиконовой долиной».
+                        Ежегодно здесь проходит Web Summit — крупнейшая IT-конференция Европы.
                     </p>
                     <a href="https://ru.wikipedia.org/wiki/Лиссабон" target="_blank" class="btn btn-primary">Источник</a>
+                    <br>
+                    <span tabindex="0" class="btn btn-light mt-2" style="color: black; cursor: pointer;" 
+                        data-bs-toggle="popover" data-bs-trigger="hover" title="Интересный факт"
+                        data-bs-content="Лиссабон — единственная европейская столица, расположенная на семи холмах, что делает прогулки по городу весьма живописными и необычными.">
+                        Интересный факт
+                    </span>
                 </div>
             </div>
         </div>
@@ -157,15 +176,33 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="img/Porto_COA.svg.png" class="img-fluid mb-3" style="max-height:150px;">
-                    <img src="img/Porto_collage.jpg" class="img-fluid mb-3" style="max-height:150px;">
+                    <div class="row mb-3">
+                        <div class="col-md-6 text-center">
+                            <img src="img/Porto_COA.svg.png" class="img-fluid">
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="img/Dostoprimechatelnosti-Portu-e1531345329488.jpg" class="img-fluid">
+                        </div>
+                    </div>
                     <p>
-                        Порту — портовый город на севере страны, население около 237 000 человек. 
-                        Основан в 1123 году, мэр — Руй Морейра. 
-                        Здесь старинные улицы гармонично соседствуют с современными кафе и винными погребами. 
-                        Соседи: на север — Матозиньюш, на восток — Гондомар, на юг — Вила-Нова-де-Гая.
+                        Порту — второй по величине город Португалии и важный культурный и экономический центр с населением около 237 000 человек.
+                        Основан в 1123 году, но первые поселения существовали здесь ещё во времена Римской империи.
+                    </p>
+                    <p>
+                        Город знаменит своим вином — портвейном, который производится на берегах реки Дору и экспортируется по всему миру.
+                        Исторический центр Порту входит в список Всемирного наследия ЮНЕСКО.
+                    </p>
+                    <p>
+                        Среди достопримечательностей — мост Дом Луиша I, старинный вокзал Сан-Бенту, церковь Святого Франциска и Ливрария Лелло — одно из самых красивых книжных магазинов в мире.
+                        Порту также известен своей футбольной командой «FC Porto» и насыщенной ночной жизнью.
                     </p>
                     <a href="https://ru.wikipedia.org/wiki/Порту" target="_blank" class="btn btn-primary">Источник</a>
+                    <br>
+                    <span tabindex="0" class="btn btn-light mt-2" style="color: black; cursor: pointer;"
+                        data-bs-toggle="popover" data-bs-trigger="hover" title="Интересный факт"
+                        data-bs-content="Название страны «Португалия» произошло именно от названия города Порту — Portus Cale.">
+                        Интересный факт
+                    </span>
                 </div>
             </div>
         </div>
@@ -178,15 +215,33 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="img/250px-CBR.png" class="img-fluid mb-3" style="max-height:150px;">
-                    <img src="img/Coimbra_e_o_rio_Mondego_(6167200429)_(cropped).jpg" class="img-fluid mb-3" style="max-height:150px;">
+                    <div class="row mb-3">
+                        <div class="col-md-6 text-center">
+                            <img src="img/250px-CBR.png" class="img-fluid">
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="img\616A19AA7F0001014F169309E6DBDECF.jpg" class="img-fluid">
+                        </div>
+                    </div>
                     <p>
-                        Коимбра — город университетов и культурного наследия, население около 143 000 человек.
-                        Основан в 1080 году, мэр — Жозе Мануэл Силва. 
-                        Исторический центр города манит туристов узкими улочками и величественными зданиями. 
-                        Соседи: на север — Мира, на восток — Пениела, на юг — Монтемор-у-Велью.
+                        Коимбра — исторический город, расположенный на берегу реки Мондегу, с населением около 143 000 человек.
+                        Основан в 1080 году и долгое время был столицей Португалии до Лиссабона.
+                    </p>
+                    <p>
+                        Здесь находится один из старейших университетов Европы — Университет Коимбры, основанный в 1290 году, внесённый в список Всемирного наследия ЮНЕСКО.
+                        Город считается интеллектуальным и культурным центром страны.
+                    </p>
+                    <p>
+                        Среди достопримечательностей — Библиотека Жоанина, Старый кафедральный собор, Ботанический сад и руины римского города Конимбрига.
+                        Коимбра известна своей студенческой культурой, традиционной песней «фаду де Коимбра» и многочисленными фестивалями.
                     </p>
                     <a href="https://ru.wikipedia.org/wiki/Коимбра" target="_blank" class="btn btn-primary">Источник</a>
+                    <br>
+                    <span tabindex="0" class="btn btn-light mt-2" style="color: black; cursor: pointer;"
+                        data-bs-toggle="popover" data-bs-trigger="hover" title="Интересный факт"
+                        data-bs-content="В университете Коимбры до сих пор сохранились академические мантии, которые вдохновили Джоан Роулинг на образы студентов Хогвартса.">
+                        Интересный факт
+                    </span>
                 </div>
             </div>
         </div>
@@ -199,15 +254,33 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="img/Faroarms.svg.png" class="img-fluid mb-3" style="max-height:150px;">
-                    <img src="img/Faro_-_Portugal_(16083970893)_(cropped).jpg" class="img-fluid mb-3" style="max-height:150px;">
+                    <div class="row mb-3">
+                        <div class="col-md-6 text-center">
+                            <img src="img/Faroarms.svg.png" class="img-fluid">
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="img/images (1).jpeg" class="img-fluid">
+                        </div>
+                    </div>
                     <p>
-                        Фару — ворота солнечного Алгарве, население около 60 000 человек.
-                        Основан в 1266 году, мэр — Роже́риу Бакальяу.
-                        Здесь уютные улочки, морской бриз и живописные пляжи.
-                        Соседи: на север — Сан-Браш-де-Алпортел, на запад — Луле, на восток — Ольян.
+                        Фару — административный центр региона Алгарве, известного своими пляжами, морепродуктами и солнечным климатом.
+                        Население города — около 60 000 человек, основан в 1266 году.
+                    </p>
+                    <p>
+                        Старый город Фару окружён древними мавританскими стенами и хранит следы римской, арабской и христианской эпох.
+                        Среди достопримечательностей — Кафедральный собор, Арка Вила, Музей Фару и знаменитая «Капелла костей», выложенная из человеческих черепов.
+                    </p>
+                    <p>
+                        Фару также является воротами в природный парк Риа Формоза — уникальный заповедник с лагунами, дюнами и редкими видами птиц.
+                        Город — один из самых туристических регионов Португалии, куда ежегодно прилетает более 3 миллионов путешественников.
                     </p>
                     <a href="https://ru.wikipedia.org/wiki/Фару" target="_blank" class="btn btn-primary">Источник</a>
+                    <br>
+                    <span tabindex="0" class="btn btn-light mt-2" style="color: black; cursor: pointer;"
+                        data-bs-toggle="popover" data-bs-trigger="hover" title="Интересный факт"
+                        data-bs-content="В Капелле костей Фару стены украшены настоящими человеческими черепами и костями монахов XVI века.">
+                        Интересный факт
+                    </span>
                 </div>
             </div>
         </div>
@@ -220,15 +293,33 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="img/COA_of_Évora_municipality_(Portugal).png" class="img-fluid mb-3" style="max-height:150px;">
-                    <img src="img/330px-Évora_-_Praça_do_Giraldo.jpg" class="img-fluid mb-3" style="max-height:150px;">
+                    <div class="row mb-3">
+                        <div class="col-md-6 text-center">
+                            <img src="img/COA_of_Évora_municipality_(Portugal).png" class="img-fluid">
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="img/images (2).jpeg" class="img-fluid">
+                        </div>
+                    </div>
                     <p>
-                        Эвора — жемчужина Алентежу с населением около 56 000 человек.
-                        Основан в 1166 году, мэр — Карлос Пинту де Са.
-                        Город славится историческим центром, римскими храмами и уютной атмосферой.
-                        Соседи: на север — Араёйолос, на юг — Виана-ду-Алентежу, на восток — Эштремош.
+                        Эвора — древний город в регионе Алентежу, с населением около 56 000 человек.
+                        Город был основан ещё римлянами под названием Эбора и сохранил множество памятников античной и средневековой архитектуры.
+                    </p>
+                    <p>
+                        Исторический центр Эворы внесён в список Всемирного наследия ЮНЕСКО.
+                        Среди главных достопримечательностей — Римский храм Дианы, Кафедральный собор XIII века, Капелла костей и Королевский дворец.
+                    </p>
+                    <p>
+                        Эвора — один из самых атмосферных городов страны: белые домики с жёлтой каймой, узкие улочки и старинные площади создают особое очарование.
+                        Город также является важным центром сельского хозяйства, виноделия и ремёсел региона Алентежу.
                     </p>
                     <a href="https://ru.wikipedia.org/wiki/Эвора" target="_blank" class="btn btn-primary">Источник</a>
+                    <br>
+                    <span tabindex="0" class="btn btn-light mt-2" style="color: black; cursor: pointer;"
+                        data-bs-toggle="popover" data-bs-trigger="hover" title="Интересный факт"
+                        data-bs-content="В Эворе до сих пор сохранился Римский храм Дианы — один из лучших примеров римской архитектуры на Иберийском полуострове.">
+                        Интересный факт
+                    </span>
                 </div>
             </div>
         </div>
