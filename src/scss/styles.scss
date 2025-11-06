@@ -15,10 +15,10 @@
 
 @include card-colors($left-color, $steps);
 
-@media (min-width: 2000px) {
-  .custom-grid .custom-col {
-    flex: 0 0 auto;
-    width: 14.2857%;
+@media (min-width: 1600px) {
+  .col-xxl-custom {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 }
 
