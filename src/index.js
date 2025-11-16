@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalByIndex = {};
     modals.forEach(el => {
         const idx = parseInt(el.getAttribute('data-index'), 10);
-        if (!Number.isNaN(idx)) modalByIndex[idx] = el;
+        if (!Number.isNaN(idx)) 
+            modalByIndex[idx] = el;
     });
 
     const indices = Object.keys(modalByIndex)

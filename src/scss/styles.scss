@@ -1,6 +1,28 @@
 @use "sass:math";
 @use "sass:color";
 @import "custom";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,  
+  xl: 1200px,
+  xxl: 1600px,
+  xxxl: 2000px,
+  xxxxl: 2500px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1900px,
+  xxxxl: 2400px
+);
+
 @import "~bootstrap/scss/bootstrap";
 
 @mixin card-colors($start-color, $steps) {
@@ -14,13 +36,6 @@
 }
 
 @include card-colors($left-color, $steps);
-
-@media (min-width: 1600px) {
-  .col-xxl-custom {
-    flex: 0 0 20%;
-    max-width: 20%;
-  }
-}
 
 body {
   background-color: $body-color;
@@ -52,7 +67,7 @@ body {
 
     img {
       object-fit: contain;
-      max-height: 425px;
+      height: 300px;
     }
 
     span {
